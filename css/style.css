@@ -1,0 +1,35 @@
+:root {}
+
+/* Custom CSS Reset by Josh Comeau (w/ changes)
+https://tinyurl.com/css-reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: calc(1em + 0.5rem);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button {
+    font: inherit;
+}
+
+p,
+h1,
+h2 {
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
