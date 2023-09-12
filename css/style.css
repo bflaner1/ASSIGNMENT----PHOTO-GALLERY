@@ -66,19 +66,52 @@ h1, h2 {
     text-align: center;
 }
 
-nav a {
+a {
     font-size: 1.4em;
 }
 
 figcaption,
 label,
-input,
 small {
     font-size: 1em;
 }
 
-label, input {
+input {
+    font-family: inherit;
+    font-size: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--accent-clr);
+    font-weight: bold;
+    padding: 0.3em;
+    margin-bottom: 1.5em;
+}
+
+input::placeholder {
+    color: var(--accent-clr);
+    font-weight: bold;
+}
+
+input:focus {
+    outline: 3px solid var(--accent-clr);
+}
+
+label {
+    padding-left: 0.75em;
+}
+
+button {
     display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0.25em;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--accent-clr);
+    color: var(--footer-txt-clr);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 p {
@@ -93,17 +126,13 @@ main {
     color: var(--main-txt-clr);
 }
 
+/* HEADER */
 nav {
     padding: 1em;
     background-color: var(--nav-bg-clr);
     color: var(--nav-txt-clr);
 }
 
-footer {
-    color: var(--footer-txt-clr);
-}
-
-/* HEADER */
 ul {
     list-style-type: none;
     width: 100%;
@@ -136,7 +165,8 @@ main {
 
 /* FOOTER */
 footer {
-    padding: 0.5em 1em;
+    padding: 0.5em 1.15em;
+    color: var(--footer-txt-clr);
 }
 
 footer p {
@@ -153,4 +183,5 @@ footer p {
 
 footer > p {
     padding: 1em 0 0;
+    text-transform: uppercase;
 }
