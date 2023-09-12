@@ -1,8 +1,9 @@
 # ASSIGNMENT // PHOTO GALLERY
  
- In this assignment, we are to develop a photo gallery webpage with provided content and design mockup.
+In this assignment, we are to develop a photo gallery webpage with provided content and design mockup.
 
 ## Objectives
+
 1. Code semantic, validated HTML5
 2. Demonstrate CSS you've learned so far *(with emphasis on this module)*
     - Grid
