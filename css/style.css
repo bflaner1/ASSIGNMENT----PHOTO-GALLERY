@@ -1,4 +1,18 @@
-:root {}
+:root {
+    --root-bg-clr: #000;
+    --nav-bg-clr: #000;
+    --nav-txt-clr: #fff;
+    --main-txt-clr: #000;
+    --main-bg-clr: #fff;
+    --footer-txt-clr: #fff;
+    --accent-clr: #007d7b;
+}
+
+html {
+    background-color: var(--root-bg-clr);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
 
 /* Custom CSS Reset by Josh Comeau (w/ changes)
 https://tinyurl.com/css-reset */
@@ -14,7 +28,9 @@ https://tinyurl.com/css-reset */
 }
 
 body {
-    line-height: calc(1em + 0.5rem);
+    line-height: 1.5;
+    width: 85vw;
+    margin: 0 auto;
 }
 
 img {
@@ -32,4 +48,109 @@ h1,
 h2 {
     overflow-wrap: break-word;
     hyphens: auto;
+}
+
+/* GLOBALS */
+h1 {
+    font-size: 2.6em;
+    color: var(--accent-clr);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav a {
+    font-size: 1.4em;
+}
+
+figcaption,
+label,
+input,
+small {
+    font-size: 1em;
+}
+
+label, input {
+    display: block;
+}
+
+p {
+    font-size: 1.09em;
+    padding: 0 0 1em;
+}
+
+header,
+main {
+    background-color: var(--main-bg-clr);
+    font-size: 1rem;
+    color: var(--main-txt-clr);
+}
+
+nav {
+    padding: 1em;
+    background-color: var(--nav-bg-clr);
+    color: var(--nav-txt-clr);
+}
+
+footer {
+    color: var(--footer-txt-clr);
+}
+
+/* HEADER */
+ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+li {
+    display: inline-block;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    padding: 0.5em;
+}
+
+/* FOOTER */
+footer {
+    padding: 0.5em 1em;
+}
+
+footer p {
+    text-align: center;
+}
+
+#contact {
+    margin-bottom: 3em;
+}
+
+#contact p {
+    padding: 1em 0;
+}
+
+footer > p {
+    padding: 1em 0 0;
 }
