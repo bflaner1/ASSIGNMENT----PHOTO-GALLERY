@@ -14,7 +14,7 @@ html {
     
 }
 
-/* Custom CSS Reset by Josh Comeau (w/ changes)
+/* Custom CSS Reset by Josh Comeau (w/ modifications)
 https://tinyurl.com/css-reset */
 *,
 *::before,
@@ -36,11 +36,6 @@ body {
 img {
     display: block;
     max-width: 100%;
-}
-
-input,
-button {
-    font: inherit;
 }
 
 p,
@@ -68,50 +63,6 @@ h1, h2 {
 
 a {
     font-size: 1.4em;
-}
-
-figcaption,
-label,
-small {
-    font-size: 1em;
-}
-
-input {
-    font-family: inherit;
-    font-size: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    color: var(--accent-clr);
-    font-weight: bold;
-    padding: 0.3em;
-    margin-bottom: 1.5em;
-}
-
-input::placeholder {
-    color: var(--accent-clr);
-    font-weight: bold;
-}
-
-input:focus {
-    outline: 3px solid var(--accent-clr);
-}
-
-label {
-    padding-left: 0.75em;
-}
-
-button {
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-    padding: 0.25em;
-    border: 0;
-    border-radius: 8px;
-    background-color: var(--accent-clr);
-    color: var(--footer-txt-clr);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1em;
 }
 
 p {
@@ -156,6 +107,9 @@ a:active {
 
 a:hover {
     text-decoration: underline;
+    text-underline-offset: 0.3em;
+    text-decoration-thickness: 5px;
+    text-decoration-color: var(--accent-clr);
 }
 
 /* MAIN */
@@ -166,6 +120,7 @@ main {
 /* FOOTER */
 footer {
     padding: 0.5em 1.15em;
+    margin: 0 auto;
     color: var(--footer-txt-clr);
 }
 
@@ -181,7 +136,79 @@ footer p {
     padding: 1em 0;
 }
 
+figcaption,
+label,
+small {
+    font-size: 1em;
+}
+
+label {
+    display: block;
+}
+
+input {
+    font-family: inherit;
+    font-size: 100%;
+    max-width: 880px;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--accent-clr);
+    font-weight: bold;
+    padding: 0.3em;
+    margin-bottom: 1.5em;
+}
+
+input::placeholder {
+    color: var(--accent-clr);
+    opacity: 0.6;
+    font-weight: bold;
+}
+
+input:focus {
+    outline: 3px solid var(--accent-clr);
+}
+
+label {
+    padding-left: 0.75em;
+}
+
+button {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0.25em;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--accent-clr);
+    color: var(--footer-txt-clr);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+}
+
 footer > p {
     padding: 1em 0 0;
     text-transform: uppercase;
+}
+
+@media (min-width: 500px) {
+    h1 {
+        text-align: left;
+    }
+}
+
+@media (min-width: 700px) {
+    footer {
+        padding: 0.5em 5em;
+    }
+}
+
+@media (min-width: 1000px) {
+    ul {
+        justify-content: end;
+    }
+
+    footer {
+        width: 880px;
+    }
 }
