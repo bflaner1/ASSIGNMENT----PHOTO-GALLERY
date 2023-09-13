@@ -75,6 +75,12 @@ p {
     padding: 0 0 1em;
 }
 
+figcaption,
+label,
+small {
+    font-size: 1em;
+}
+
 header,
 main {
     background-color: var(--main-bg-clr);
@@ -118,6 +124,53 @@ main {
     padding: 0.5em;
 }
 
+#photos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    padding-bottom: 2rem;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+figure img {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    z-index: 0;
+}
+
+figure figcaption {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    z-index: 1;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.top {
+    justify-self: center;
+    padding-top: 1em;
+}
+
+.bottom {
+    justify-self: center;
+    align-self: end;
+    padding-bottom: 0.5em;
+}
+
+.black {
+    color: #000;
+}
+
+.white {
+    color: #fff;
+}
+
 /* FOOTER */
 footer {
     padding: 0.5em 1.15em;
@@ -135,12 +188,6 @@ footer p {
 
 #contact p {
     padding: 1em 0;
-}
-
-figcaption,
-label,
-small {
-    font-size: 1em;
 }
 
 label {
@@ -210,7 +257,17 @@ footer > p {
         justify-content: end;
     }
 
+    #photos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     footer {
         width: 880px;
+    }
+}
+
+@media (min-width: 1300px) {
+    #photos {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
