@@ -27,6 +27,11 @@ https://tinyurl.com/css-reset */
     padding: 0;
 }
 
+*::selection {
+    background-color: var(--accent-clr);
+    color: #fff;
+}
+
 body {
     line-height: 1.5;
     width: 85vw;
