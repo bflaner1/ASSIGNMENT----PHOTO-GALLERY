@@ -97,10 +97,6 @@ ul {
     gap: 1em;
 }
 
-li {
-    display: inline-block;
-}
-
 a:link,
 a:visited,
 a:active {
