@@ -191,6 +191,7 @@ footer > p {
     text-transform: uppercase;
 }
 
+/* MEDIA QUERIES */
 @media (min-width: 500px) {
     h1 {
         text-align: left;
